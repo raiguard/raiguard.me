@@ -2,11 +2,9 @@ image: alpine/edge
 oauth: pages.sr.ht/PAGES:RW
 packages:
 - hut
-environment:
-  site: raiguard.srht.site
 tasks:
 - package: |
-    cd $site
+    cd raiguard.me
     tar -cvz . > ../site.tar.gz
 - upload: |
-    hut pages publish -d $site site.tar.gz
+    hut pages publish -d raiguard.srht.site site.tar.gz
