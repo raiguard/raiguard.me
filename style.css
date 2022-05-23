@@ -2,3 +2,19 @@ body {
     background-color: #181a1f;
     color: #abb2bf;
 }
+
+a:link {
+    color: #61afef;
+}
+
+a:hover {
+    color: #56b6c2;
+}
+
+a:active {
+    color: #e5c07b;
+}
+
+a:visited {
+    color: #c678dd;
+}
