@@ -1,7 +1,17 @@
 html, body {
+    background-color: #fafafa;
+    color: #4b4c54;
+}
+
+@media (prefers-color-scheme: dark) {
+    html, body {
+        background-color: #181a1f;
+        color: #abb2bf;
+    }
+}
+
+html, body {
     align-items: center;
-    background-color: #181a1f;
-    color: #abb2bf;
     display: flex;
     flex-direction: column;
     font-family: 'Source Code Pro';
