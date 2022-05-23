@@ -21,18 +21,6 @@ html, body {
     width: auto;
 }
 
-a:link {
+a:link, a:visited {
     color: #61afef;
-}
-
-a:hover {
-    color: #56b6c2;
-}
-
-a:active {
-    color: #e5c07b;
-}
-
-a:visited {
-    color: #c678dd;
 }
