@@ -14,7 +14,7 @@ html, body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    font-family: 'Source Code Pro';
+    font-family: 'Source Code Pro', 'Fira Code', 'Roboto Mono', 'Nanum Gothic Coding', monospace;
     font-weight: 500;
     height: 100%;
     justify-content: center;
