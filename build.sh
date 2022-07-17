@@ -21,10 +21,10 @@ for file in blog/*.md; do
     # Create article index entry
     date=$(echo "${file#blog/}" | awk 'BEGIN { FS = "-"; OFS = "-" } { print $1, $2, $3 }')
     thisindex=$(
-        cat "blog/index-article.template" \
+        cat blog/index-article.template \
         | sed "s/{{datetime}}/${date}T00:00:00/" \
         | sed "s/{{date}}/$date/" \
-        | sed "s:{{filename}}:${out#static/}:" \
+        | sed "s:{{filename}}:${out#static}:" \
         | sed "s/{{title}}/$(cat $file | head -1 | sed 's/# //')/"
     )
     articleindex="$thisindex$articleindex"
