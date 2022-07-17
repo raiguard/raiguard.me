@@ -5,8 +5,11 @@ packages:
 environment:
   site: raiguard.me
 tasks:
-- package: |
+- generate: |
     cd $site
-    tar -cvz . > ../site.tar.gz
+    ./build.sh
+- package: |
+    cd $site/static
+    tar -cvz . > ../../site.tar.gz
 - upload: |
     hut pages publish -d $site site.tar.gz

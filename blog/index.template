@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style.css">
+    <title>raiguard's blog</title>
+</head>
+<body>
+    <nav>
+        <h3>raiguard</h3>
+        <a href="../">home</a>
+        ·
+        <a href=".">blog</a>
+        ·
+        <a href="https://sr.ht/~raiguard">sourcehut</a>
+        ·
+        <a href="mailto:ch@raiguard.me">contact</a>
+    </nav>
+    <main id="blogs">
+        <h1>Blog posts</h1>
+        <div class="article-list">
+            {{posts}}
+        </div>
+    </main>
+</body>
+</html>
