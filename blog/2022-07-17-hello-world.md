@@ -4,7 +4,7 @@ If you are seeing this, then my blog generator works! This blog will contain var
 anime, video games, programming, music, space, etc. The list will probably grow over time. I also want to do regular
 "status updates" for my programming projects as I feel like it will be a great way to keep track of my progress.
 
-This blog was generated using a 41-line bash script of my own design. Here is the source code, licensed under MIT:
+This blog was generated using a 39-line bash script of my own design. Here is the source code, licensed under MIT:
 
 ```sh
 #!/bin/sh
@@ -33,7 +33,7 @@ for file in blog/*.md; do
         cat "blog/index-article.template" \
         | sed "s/{{datetime}}/${date}T00:00:00/" \
         | sed "s/{{date}}/$date/" \
-        | sed "s:{{filename}}:.${out#static/blog}:" \
+        | sed "s:{{filename}}:${out#static/}:" \
         | sed "s/{{title}}/$(cat $file | head -1 | sed 's/# //')/"
     )
     articleindex="$thisindex$articleindex"
