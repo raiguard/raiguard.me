@@ -1,4 +1,4 @@
-image: arch/latest
+image: archlinux
 oauth: pages.sr.ht/PAGES:RW
 packages:
 - cmark
