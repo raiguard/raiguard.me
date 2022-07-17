@@ -24,7 +24,7 @@ for file in blog/*.md; do
         cat "blog/index-article.template" \
         | sed "s/{{datetime}}/${date}T00:00:00/" \
         | sed "s/{{date}}/$date/" \
-        | sed "s:{{filename}}:${out#static/blog/}:" \
+        | sed "s:{{filename}}:${out#static/}:" \
         | sed "s/{{title}}/$(cat $file | head -1 | sed 's/# //')/"
     )
     articleindex="$thisindex$articleindex"
