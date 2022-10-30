@@ -1,0 +1,126 @@
+$light-bg: #ffffff;
+$light-subbg: #e6e6e6;
+$light-fg: #000000;
+$light-magenta: #a626a4;
+$light-blue: #4078f2;
+
+$dark-bg: #181a1f;
+$dark-subbg: #272b33;
+$dark-fg: #c3cad8;
+$dark-magenta: #c678dd;
+$dark-blue: #61afef;
+
+title { display: none }
+
+body {
+    background-color: $light-bg;
+    color: $light-fg;
+    font-family: sans-serif;
+    // font-weight: 500;
+    margin: 0 auto;
+    max-width: 920px;
+    padding: 1rem;
+    width: auto;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-block-start: 0;
+    margin-block-end: 0.67em;
+
+    small {
+        display: block;
+        font-size: 1rem;
+    }
+}
+
+h2 {
+    margin: 0;
+}
+
+a:link {
+    color: $light-blue;
+}
+a:visited {
+    color: $light-magenta;
+}
+
+.index {
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        display: block;
+        margin: 0 auto 1rem;
+        border-radius: 5px;
+        size: 148px;
+    }
+
+    dl {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-gap: .2rem 1rem;
+
+        dt {
+            font-size: 0.9rem;
+            font-weight: 700;
+        }
+    }
+}
+
+article {
+    pre {
+        background-color: $light-subbg;
+        padding: 0.5rem;
+        overflow: scroll;
+        font-family: monospace;
+        border-radius: 5px;
+    }
+}
+
+section.articles {
+    flex-grow: 1;
+    article {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: $dark-bg;
+        color: $dark-fg;
+    }
+
+    a:link {
+        color: $dark-blue;
+    }
+    a:visited {
+        color: $dark-magenta;
+    }
+
+    article > pre {
+        background-color: $dark-subbg;
+    }
+}
+
+@media (max-width: 600px) {
+    .index {
+        flex-direction: column;
+    }
+    aside {
+        margin-top: 3rem;
+        max-width: 100%;
+        // dl {
+        //     grid-template-columns: auto auto;
+        // }
+    }
+}

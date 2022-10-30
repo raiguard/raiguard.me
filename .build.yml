@@ -10,7 +10,7 @@ tasks:
     cd $site
     ./build.sh
 - package: |
-    cd $site/static
+    cd $site/build
     tar -cvz . > ../../site.tar.gz
 - upload: |
     hut pages publish -d $site site.tar.gz

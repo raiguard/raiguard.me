@@ -1,7 +1,0 @@
-<article>
-    <header>
-        <time datetime="{{datetime}}">{{date}}</time>
-        ·
-        <a href="{{filename}}">{{title}}</a>
-    </header>
-</article>

@@ -5,5 +5,14 @@ and the content of the `blog/` subfolder is licenced under the [Creative Commons
 Attribution 3.0](https://creativecommons.org/licenses/by/3.0/us/deed.en_US)
 license.
 
-This site is 100% custom-generated, using the `build.sh` shell script found in
-the root directory.
+## Building
+
+This site is 100% custom-built using a shell script.
+
+**Dependencies:**
+- cmark
+- sass
+
+```
+make
+```
