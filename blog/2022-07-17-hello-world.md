@@ -1,10 +1,13 @@
 # Hello, world!
 
-If you are seeing this, then my blog generator works! This blog will contain various ramblings on my personal interests:
-anime, video games, programming, music, space, etc. The list will probably grow over time. I also want to do regular
-"status updates" for my programming projects as I feel like it will be a great way to keep track of my progress.
+If you are seeing this, then my blog generator works! This blog will contain
+various ramblings on my personal interests: anime, video games, programming,
+music, space, etc. The list will probably grow over time. I also want to do
+regular "status updates" for my programming projects as I feel like it will be
+a great way to keep track of my progress.
 
-This blog was generated using a 39-line bash script of my own design. Here is the source code, licensed under MIT:
+This blog was generated using a 39-line bash script of my own design. Here is
+the source code, licensed under MIT:
 
 ```sh
 #!/bin/sh
