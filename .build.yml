@@ -2,6 +2,7 @@ image: archlinux
 oauth: pages.sr.ht/PAGES:RW
 packages:
 - cmark
+- dart-sass
 - hut
 environment:
   site: raiguard.me
