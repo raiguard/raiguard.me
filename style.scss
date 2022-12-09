@@ -16,7 +16,6 @@ body {
     background-color: $light-bg;
     color: $light-fg;
     font-family: sans-serif;
-    // font-weight: 500;
     margin: 0 auto;
     max-width: 920px;
     padding: 1rem;
@@ -118,8 +117,5 @@ section.articles {
     aside {
         margin-top: 3rem;
         max-width: 100%;
-        // dl {
-        //     grid-template-columns: auto auto;
-        // }
     }
 }
