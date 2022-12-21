@@ -1,4 +1,8 @@
-# Hello, world! (part 2)
+---
+title: Hello, world! (part 2)
+date: 2022-10-30
+draft: true
+---
 
 So far, my promise of "consistent, entertaining, and/or informative blog posts
 to come" has failed spectacularly.

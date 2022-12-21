@@ -1,4 +1,8 @@
-# Hello, world!
+---
+title: Hello, world!
+date: 2022-07-17
+draft: false
+---
 
 If you are seeing this, then my blog generator works! This blog will contain
 various ramblings on my personal interests: anime, video games, programming,

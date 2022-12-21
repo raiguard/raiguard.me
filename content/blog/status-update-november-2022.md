@@ -1,4 +1,8 @@
-# Status Update, November 2022
+---
+title: Status Update, November 2022
+date: 2022-12-1
+draft: true
+---
 
 Hello! Welcome to my first status update. I would like to write these at the end
 of each month to tell you what I have been up to. While this blog will mostly be
