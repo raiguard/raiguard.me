@@ -17,24 +17,8 @@ body {
     color: $light-fg;
     font-family: sans-serif;
     margin: 0 auto;
-    max-width: 920px;
     padding: 1rem;
-    width: auto;
-}
-
-h1 {
-    font-size: 1.5rem;
-    margin-block-start: 0;
-    margin-block-end: 0.67em;
-
-    small {
-        display: block;
-        font-size: 1rem;
-    }
-}
-
-h2 {
-    margin: 0;
+    width: 100vw;
 }
 
 a:link {
@@ -44,22 +28,12 @@ a:visited {
     color: $light-magenta;
 }
 
-.index {
+main {
     display: flex;
     flex-direction: row;
-}
-
-aside {
-    max-width: 40%;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-
-    img {
-        display: block;
-        margin: 0 auto 1rem;
-        border-radius: 5px;
-    }
+    justify-content: center;
+    width: inherit;
 
     dl {
         display: grid;
@@ -73,24 +47,19 @@ aside {
     }
 }
 
-article {
-    pre {
-        background-color: $light-subbg;
-        padding: 0.5rem;
-        overflow: scroll;
-        font-family: monospace;
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2rem;
+
+    img {
+        display: flex;
+        margin: 0 0 1rem;
         border-radius: 5px;
     }
 }
 
-section.articles {
-    flex-grow: 1;
-    article {
-        display: flex;
-        flex-direction: column;
-        margin: 1rem 0;
-    }
-}
 
 @media (prefers-color-scheme: dark) {
     body {
@@ -104,18 +73,10 @@ section.articles {
     a:visited {
         color: $dark-magenta;
     }
-
-    article > pre {
-        background-color: $dark-subbg;
-    }
 }
 
 @media (max-width: 600px) {
-    .index {
+    main {
         flex-direction: column;
-    }
-    aside {
-        margin-top: 3rem;
-        max-width: 100%;
     }
 }
