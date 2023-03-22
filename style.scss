@@ -16,9 +16,6 @@ body {
     background-color: $light-bg;
     color: $light-fg;
     font-family: sans-serif;
-    margin: 0 auto;
-    padding: 1rem;
-    width: 100vw;
 }
 
 a:link {
@@ -33,7 +30,13 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: inherit;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 
     dl {
         display: grid;
@@ -78,5 +81,8 @@ aside {
 @media (max-width: 600px) {
     main {
         flex-direction: column;
+    }
+    aside {
+        margin-right: 0;
     }
 }
